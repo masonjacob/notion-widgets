@@ -8,23 +8,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'  # Specify the Node.js version
-
-      - name: Install dependencies
-        run: yarn install
-
-      - name: Build project
-        run: yarn run build
-
       - name: Deploy to GitHub Pages
-        run: yarn run deploy
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # GitHub token provided by Actions
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
