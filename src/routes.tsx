@@ -23,6 +23,26 @@ const router = createHashRouter([
     {
         path: "/deployments/spain/09-11-2024/soccer/image-gallery",
         element: <ImagesGallery baseUrl={`${baseUrl}/images/spain/09-11-2024_soccer`} numImages={4}/>
+    },
+    {
+        path: "/deployments/spain/09-14-2024/ascent/image-gallery",
+        element: <ImagesGallery baseUrl={`${baseUrl}/images/spain/09-14-2024_hernio/ascent`} numImages={22}/>
+    },
+    {
+        path: "/deployments/spain/09-14-2024/descent/image-gallery",
+        element: <ImagesGallery baseUrl={`${baseUrl}/images/spain/09-14-2024_hernio/descent`} numImages={3}/>
+    },
+    {
+        path: "/deployments/spain/09-14-2024/lunch/image-gallery",
+        element: <ImagesGallery baseUrl={`${baseUrl}/images/spain/09-14-2024_hernio/lunch`} numImages={6}/>
+    },
+    {
+        path: "/deployments/spain/09-14-2024/market/image-gallery",
+        element: <ImagesGallery baseUrl={`${baseUrl}/images/spain/09-14-2024_hernio/market`} numImages={6}/>
+    },
+    {
+        path: "/deployments/spain/09-14-2024/ridge/image-gallery",
+        element: <ImagesGallery baseUrl={`${baseUrl}/images/spain/09-14-2024_hernio/ridge`} numImages={12}/>
     }
   ]);
 
