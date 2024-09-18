@@ -7,8 +7,8 @@ let baseUrl = `${process.env.REACT_APP_HOSTNAME_PROD}/images/spain/09-14-2024_he
 
 for (let i = 1; i <= 50; i++) {
     images.push({
-        original: `${baseUrl}/${i}.jpg`,
-        thumbnail: `${baseUrl}/${i}.jpg`
+        original: `${baseUrl}/original/${i}.jpg`,
+        thumbnail: `${baseUrl}/thumbnail/${i}.jpg`
     });
 }
 
