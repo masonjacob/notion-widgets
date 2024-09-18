@@ -10,7 +10,7 @@ const router = createHashRouter([
     },
     {
       path: "/deployments/spain/09-02-2024/flight/image-gallery",
-      element: <ImagesGallery baseUrl={`${baseUrl}/deployments/spain/09-02-2024_arrival/flight`} numImages={8}/>
+      element: <ImagesGallery baseUrl={`${baseUrl}/images/spain/09-02-2024_arrival/flight`} numImages={8}/>
     }
   ]);
 
