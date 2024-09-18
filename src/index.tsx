@@ -11,11 +11,11 @@ import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/notion-widgets",
     element: <App/>
   },
   {
-    path: "/deployments/spain/09-14-2024_hernio_image-gallery",
+    path: "/notion-widgets/deployments/spain/09-14-2024_hernio_image-gallery",
     element: <HernioImageGallery/>
   }
 ]);
