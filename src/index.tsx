@@ -1,24 +1,9 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import {
-  createHashRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
+import router from "./routes";	
 import "./index.css";
-import App from './App';
-import HernioImageGallery from "./deployments/spain/09-14-2024_hernio/09-14-2024_hernio_image-gallery";
 import reportWebVitals from './reportWebVitals';
-
-const router = createHashRouter([
-  {
-    path: "/",
-    element: <App/>
-  },
-  {
-    path: "/deployments/spain/09-14-2024_hernio_image-gallery",
-    element: <HernioImageGallery/>
-  }
-]);
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
