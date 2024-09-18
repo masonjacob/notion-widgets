@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
@@ -9,13 +9,13 @@ import App from './App';
 import HernioImageGallery from "./deployments/spain/09-14-2024_hernio/09-14-2024_hernio_image-gallery";
 import reportWebVitals from './reportWebVitals';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: "/notion-widgets",
+    path: "/",
     element: <App/>
   },
   {
-    path: "/notion-widgets/deployments/spain/09-14-2024_hernio_image-gallery",
+    path: "/deployments/spain/09-14-2024_hernio_image-gallery",
     element: <HernioImageGallery/>
   }
 ]);
