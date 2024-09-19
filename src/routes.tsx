@@ -43,6 +43,10 @@ const router = createHashRouter([
     {
         path: "/deployments/spain/09-14-2024/ridge/image-gallery",
         element: <ImagesGallery baseUrl={`${baseUrl}/images/spain/09-14-2024_hernio/ridge`} numImages={12}/>
+    },
+    {
+        path: "/deployments/spain/09-14-2024/swim/image-gallery",
+        element: <ImagesGallery baseUrl={`${baseUrl}/images/spain/09-14-2024_swim`} numImages={3}/>
     }
   ]);
 
