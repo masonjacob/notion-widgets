@@ -47,6 +47,18 @@ const router = createHashRouter([
     {
         path: "/deployments/spain/09-14-2024/swim/image-gallery",
         element: <ImagesGallery baseUrl={`${baseUrl}/images/spain/09-14-2024_swim`} numImages={3}/>
+    },
+    {
+        path: "/deployments/spain/09-15-2024/start/image-gallery",
+        element: <ImagesGallery baseUrl={`${baseUrl}/images/spain/09-15-2024_flysch/start`} numImages={15}/>
+    },
+    {
+        path: "/deployments/spain/09-15-2024/middle/image-gallery",
+        element: <ImagesGallery baseUrl={`${baseUrl}/images/spain/09-15-2024_flysch/middle`} numImages={23}/>
+    },
+    {
+        path: "/deployments/spain/09-15-2024/sunset/image-gallery",
+        element: <ImagesGallery baseUrl={`${baseUrl}/images/spain/09-15-2024_flysch/sunset`} numImages={13}/>
     }
   ]);
 
